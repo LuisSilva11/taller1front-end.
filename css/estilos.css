@@ -1,0 +1,84 @@
+nav {
+    float: left;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url("/img/criss-cross.png");
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  .active {
+    background-color: #04AA6D;
+    float: right;
+  }
+  a {
+    display: block;
+    background-color: #333;
+  }
+  ul {
+    list-style-type: none;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+.boton1,
+.boton2,
+.boton3,
+.boton4{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-family: Times New Roman, serif;
+    color: #000;
+    border-radius: 50px;
+    border-color: #fff;
+    display: inline-block;
+    padding: 10px 0px;
+    text-align: center;
+    width: 30%;
+    text-decoration: none;
+    box-shadow: 0px 3px 0px #22F3BB;
+    background: #fff;
+    text-align: center;
+    margin-top: 10%;
+    color: #22F3BB;
+}
+a:hover {
+    background-color: #bbb;
+  }
+
+
+label {
+    color: #22F3BB;
+    font-size: 25px;
+}
+
+input {
+    box-shadow: 0px 3px 0px #22F3BB;
+    text-decoration: none;
+    border-radius: 50px;
+}
