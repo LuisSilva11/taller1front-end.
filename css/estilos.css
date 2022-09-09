@@ -2,7 +2,7 @@ nav {
     float: left;
 }
 nav h1{
-  color: #22F3BB;
+  color: #dc3545;
   font-family: 'Courier New', Courier, monospace;
 }
 h1{
@@ -67,14 +67,13 @@ nav{
     text-align: center;
     width: 30%;
     text-decoration: none;
-    box-shadow: 0px 3px 0px #22F3BB;
+    box-shadow: 0px 3px 0px #dc3545;
     background: #fff;
     text-align: center;
     margin-top: 10%;
-    color: #22F3BB;
+    color: #dc3545;
 }
 .botones button{
-  
   width: 25%;
 }
 .botones input{
@@ -86,20 +85,49 @@ nav{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
 }
+.grados button{
+  width: 25%;
+}
+.grados select {
+  width: 25%;
+}
+.grados input{
+  width: 25%;
+}
+.grados{
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.triangulo input{
+  width: 25%;
+}
+.triangulo button{
+  width: 25%;
+}
+.triangulo{
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 a:hover {
     background-color: #bbb;
   }
 
 
 label {
-    color: #22F3BB;
+    color: #dc3545;
     font-size: 25px;
 }
 
 input {
-    box-shadow: 0px 3px 0px #22F3BB;
+    box-shadow: 0px 3px 0px #dc3545;
     text-decoration: none;
     border-radius: 50px;
 }

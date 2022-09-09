@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="img/JavaScript.png">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>TEMPERATURAS</title>
 </head>
+
 <body>
     
+    <div class="grados">
+        <h1>TEMPERATURAS</h1>
+        <select id="se1" class="form-select" aria-label="Default select example">
+            <option selected>Seleccione un tipo de la temperatura</option>
+            <option value="1">Fahrenheit</option>
+            <option value="2">Celsius</option>
+            <option value="3">Kelvin</option>
+        </select>
+        <br>
+        <select id="se2" class="form-select" aria-label="Default select example">
+            <option selected>Seleccione temperatura a convertir</option>
+            <option value="1">Fahrenheit</option>
+            <option value="2">Celsius</option>
+            <option value="3">Kelvin</option>
+        </select>
+        <br>
+        <input id="grados" type="number" placeholder="Ingrese la cantidad de grados">
+        <br>
+        <button id="btn" class="btn btn-danger">CALCULAR</button>
+    </div>
 </body>
+
 </html>
