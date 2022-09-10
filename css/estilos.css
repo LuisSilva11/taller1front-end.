@@ -147,3 +147,65 @@ input {
     text-decoration: none;
     border-radius: 50px;
 }
+.modal{
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: auto;
+  padding-top: 200px;
+  display: none;
+}
+
+.contenidoModal{
+  background-color: #FFFFFF;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  padding: 1rem;
+  animation-name: animarmodal;
+  animation-duration: 0.5s;
+}
+
+@keyframes animarmodal {
+  from {top: -300px; opacity: 0;}
+  to{top: 0; opacity: 1;}
+}
+.cerrarModal, 
+.cerrarModal2,
+.cerrarModal3,
+.cerrarModal4,
+.cerrarModal5,
+.cerrarModal6,
+.cerrarModal7,
+.cerrarModal8{
+  font-size: 2rem;
+  float: right; 
+  cursor: pointer; 
+
+}
+.contenidoModal{
+  background-color: #343a40;
+  color: #fff;
+}
+.contenidoModal h2{
+  background-color: #dc3545;
+  color: #FFFFFF;
+  padding: 1rem 0;
+  text-align: center;
+  clear: both;
+}
+.paescri input{
+  width: 45%;
+}
+.paescri button{
+  
+}
+.paescri{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

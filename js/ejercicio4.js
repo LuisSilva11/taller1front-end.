@@ -6,7 +6,7 @@ function profesores(){
     let se2 = document.getElementById("se2").value
     se2 = parseInt(se2)
     let se3 = document.getElementById("se3").value
-    se2 = parseInt(se3)
+    se3 = parseInt(se3)
 
     if(se1==1 && se2==1 && se3==1 ){
         alert("usted es Cristian Buitrago y da clases de PHP")

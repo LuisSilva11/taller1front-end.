@@ -1,69 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="img/JavaScript.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="img/JavaScript.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
 </head>
 <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">
-      <img src="img/JavaScript.png" width="30" height="30" alt="">
-    </a>
-  </nav>
+  <a class="navbar-brand" href="index.html">
+    <img src="img/JavaScript.png" width="30" height="30" alt="">
+  </a>
+</nav>
+
 <body>
-    <div class="cards">
-    <div class="card text-white bg-dark mb-3"" style="width: 18rem;">
-        <img class="card-img-top" src="img/cuadrado.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">CUADRADO</h5>
-          <p class="card-text">Permitira calcular el área y el perímetro de un cuadrado</p>
-        </div>
-        <div class="card-body">
-            <button id="btn" class="btn btn-danger">PERÍMETRO</button>
-            <button id="btn" class="btn btn-danger">ÁREA</button>
-        </div>
+  <div class="cards">
+    <div class="card text-white bg-dark mb-3"" style=" width: 18rem;">
+      <img class="card-img-top" src="img/cuadrado.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">CUADRADO</h5>
+        <p class="card-text">Permitira calcular el área y el perímetro de un cuadrado</p>
       </div>
-    <br>
-    <div class="card text-white bg-dark mb-3"" style="width: 18rem;">
-        <img class="card-img-top" src="img/triangulo.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">TRIANGULO</h5>
-          <p class="card-text">Permitira calcular el área y el perímetro de un triangulo</p>
-        </div>
-        <div class="card-body">
-            <button id="btn" class="btn btn-danger">PERÍMETRO</button>
-            <button id="btn" class="btn btn-danger">ÁREA</button>
-        </div>
-      </div>
-    <br>
-    <div class="card text-white bg-dark mb-3"" style="width: 18rem;">
-        <img class="card-img-top" src="img/rectangulo.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">RECTANGULO</h5>
-          <p class="card-text">Permitira calcular el área y el perímetro de un rectangulo</p>
-        </div>
-        <div class="card-body">
-            <button id="btn" class="btn btn-danger">PERÍMETRO</button>
-            <button id="btn" class="btn btn-danger">ÁREA</button>
-        </div>
-      </div>
-    <br>
-    <div class="card text-white bg-dark mb-3"" style="width: 18rem;">
-        <img class="card-img-top" src="img/circulo.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">CIRCULO</h5>
-          <p class="card-text">Permitira calcular el área y el perímetro de un circulo</p>
-        </div>
-        <div class="card-body">
-            <button id="btn" class="btn btn-danger">PERÍMETRO</button>
-            <button id="btn" class="btn btn-danger">ÁREA</button>
-        </div>
+      <div class="card-body">
+        <button class="btn btn-danger" id="abrirModal">PERÍMETRO</button>
+        <button id="abrirModal2" class="btn btn-danger">ÁREA</button>
       </div>
     </div>
-    <script src="js/ejercicio5.js"></script>
+    <br>
+    <div class="card text-white bg-dark mb-3"" style=" width: 18rem;">
+      <img class="card-img-top" src="img/triangulo.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">TRIANGULO</h5>
+        <p class="card-text">Permitira calcular el área y el perímetro de un triangulo</p>
+      </div>
+      <div class="card-body">
+        <button id="abrirModal3" class="btn btn-danger">PERÍMETRO</button>
+        <button id="abrirModal4" class="btn btn-danger">ÁREA</button>
+      </div>
+    </div>
+    <br>
+    <div class="card text-white bg-dark mb-3"" style=" width: 18rem;">
+      <img class="card-img-top" src="img/rectangulo.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">RECTANGULO</h5>
+        <p class="card-text">Permitira calcular el área y el perímetro de un rectangulo</p>
+      </div>
+      <div class="card-body">
+        <button id="abrirModal5" class="btn btn-danger">PERÍMETRO</button>
+        <button id="abrirModal6" class="btn btn-danger">ÁREA</button>
+      </div>
+    </div>
+    <br>
+    <div class="card text-white bg-dark mb-3"" style=" width: 18rem;">
+      <img class="card-img-top" src="img/circulo.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">CIRCULO</h5>
+        <p class="card-text">Permitira calcular el área y el perímetro de un circulo</p>
+      </div>
+      <div class="card-body">
+        <button id="abrirModal7" class="btn btn-danger">PERÍMETRO</button>
+        <button id="abrirModal8" class="btn btn-danger">ÁREA</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="ventanaModal" class="modal">
+    <div class="contenidoModal">
+      <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+      <h2>Perímetro cuadrado</h2>
+      <div class="paescri">
+      <input id="pcu" type="text" placeholder="Digite el lado del cuadrado">
+      <br>
+    <button id="btn" class="btn btn-danger">CALCULAR</button>
+    </div>
+    </div>
+  </div>
+  <div id="ventanaModal2" class="modal">
+    <div class="contenidoModal">
+      <span class="cerrarModal2"><i class="fa-solid fa-xmark"></i></span>
+      <h2>Área cuadrado</h2>
+      <div class="paescri">
+      <input id="acu" type="text" placeholder="Digite el lado del cuadrado">
+      <br>
+    <button id="btn2" class="btn btn-danger">CALCULAR</button>
+      </div>
+    </div>
+  </div>
+  <div id="ventanaModal3" class="modal">
+    <div class="contenidoModal">
+      <span class="cerrarModal3"><i class="fa-solid fa-xmark"></i></span>
+      <h2>Perímetro triangulo</h2>
+      <div class="paescri">
+        <input id="ptri" type="text" placeholder="Digite el primer lado del triangulo">
+        <br>
+        <input id="ptri2" type="text" placeholder="Digite el segundo lado del triangulo">
+        <br>
+        <input id="ptri3" type="text" placeholder="Digite el tercero lado del triangulo">
+        <br>
+        <button id="btn3" class="btn btn-danger">CALCULAR</button>  
+      </div>
+    </div>
+  </div>
+  <div id="ventanaModal4" class="modal">
+    <div class="contenidoModal">
+      <span class="cerrarModal4"><i class="fa-solid fa-xmark"></i></span>
+      <h2>Área triangulo</h2>
+      <div class="paescri">
+        <input id="atri" type="text" placeholder="Ingrese la base del triangulo">
+        <br>
+        <input id="atri2" type="text" placeholder="Ingrese la altura del triangulo">
+        <br>
+        <button id="btn4" class="btn btn-danger">CALCULAR</button>  
+      </div>
+    </div>
+  </div>
+  <div id="ventanaModal5" class="modal">
+    <div class="contenidoModal">
+      <span class="cerrarModal5"><i class="fa-solid fa-xmark"></i></span>
+      <h2>Perímetro rectangulo</h2>
+      <div class="paescri">
+        <input id="pre" type="text" placeholder="Digite la base del rectangulo">
+        <br>
+        <input id="pre2" type="text" placeholder="Digite la altura del rectangulo">
+        <br>
+        <button id="btn5" class="btn btn-danger">CALCULAR</button> 
+      </div>
+    </div>
+  </div>
+  <div id="ventanaModal6" class="modal">
+    <div class="contenidoModal">
+      <span class="cerrarModal6"><i class="fa-solid fa-xmark"></i></span>
+      <h2>Área rectangulo</h2>
+      <div class="paescri">
+        <input id="are" type="text" placeholder="Digite la base del rectangulo">
+        <br>
+        <input id="are2" type="text" placeholder="Digite la altura del rectangulo">
+        <br>
+        <button id="btn6" class="btn btn-danger">CALCULAR</button>  
+      </div>
+    </div>
+  </div>
+  <div id="ventanaModal7" class="modal">
+    <div class="contenidoModal">
+      <span class="cerrarModal7"><i class="fa-solid fa-xmark"></i></span>
+      <h2>Perímetro circulo</h2>
+      <div class="paescri">
+        <input id="pci" type="text" placeholder="Digite el radio del circulo">
+        <br>
+        <button id="btn7" class="btn btn-danger">CALCULAR</button>  
+      </div>
+    </div>
+  </div>
+  <div id="ventanaModal8" class="modal">
+    <div class="contenidoModal">
+      <span class="cerrarModal8"><i class="fa-solid fa-xmark"></i></span>
+      <h2>Área circulo</h2>
+      <div class="paescri">
+        <input id="aci" type="text" placeholder="Digite el radio del circulo">
+        <br>
+        <button id="btn8" class="btn btn-danger">CALCULAR</button>  
+      </div>
+    </div>
+  </div>
+  <script src="js/ejercicio5.js"></script>
+  <script src="js/modales5.js"></script>
 </body>
+
 </html>
