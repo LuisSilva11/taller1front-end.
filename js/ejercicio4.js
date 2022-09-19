@@ -12,7 +12,7 @@ function profesores(){
         alert("usted es Cristian Buitrago y da clases de PHP")
     }
     else if(se1==2 && se2==2 && se3==2 ){
-        alert("usted es Tatis Cabrera y da clases de JAVASCRIPT")
+        alert("usted es Tatiana Cabrera y da clases de JAVASCRIPT")
     }
     else if(se1==3 && se2==3 && se3==3 ){
         alert("usted es Fernando Galindo y da clases de BASE DE DATOS")
