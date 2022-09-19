@@ -7,7 +7,7 @@ console.log(p)
         alert(c)
     }
 
-
+  
     btn.addEventListener('click', longitud)
 
 //mayuscula

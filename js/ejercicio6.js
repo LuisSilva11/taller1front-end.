@@ -112,3 +112,12 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
+let btnmodal = document.getElementById("terminos");
+let venmodal = document.getElementById("ventanaModal");
+let cermodal = document.querySelector(".cerrarModal");
+btnmodal.addEventListener("click", () => {
+    venmodal.style.display = "block";
+})
+cermodal.addEventListener("click", () => {
+    venmodal.style.display = "none";
+})

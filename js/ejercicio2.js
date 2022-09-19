@@ -1,5 +1,4 @@
 let btn = document.getElementById("btn")
-
 function temperatura(){
     let gra = document.getElementById("grados").value
     gra = parseInt(gra)
@@ -33,8 +32,5 @@ function temperatura(){
         result = (gra - 273.15).toFixed(2)
         alert (result)
     }
-
 }
-
-
 btn.addEventListener('click', temperatura)

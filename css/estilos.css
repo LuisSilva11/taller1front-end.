@@ -34,7 +34,9 @@ body {
   }
   .opc{
       margin-top: 15%;
-
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
   }
 
   .boton,
@@ -108,6 +110,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.formulario{
+  margin-top: 3%;
+}
 .formulario h1{
   display: flex;
   align-items: center;
@@ -117,8 +122,13 @@ body {
   width: 25%;
   margin-left: 37%;
 }
-.formulario button{
-  margin-left: 46%;
+.formulario__label {
+  margin-left: 2%;
+  width: 70%;
+}
+.parra{
+  display: flex;
+  justify-content: center;
 }
 .formulario__grupo input{
   width: 25%;
@@ -287,24 +297,14 @@ input {
   align-items: center;
 }
 @media(max-width:450px){
-
-  .boton,
-  .boton2,
-  .boton3,
-  .boton4,
-  .boton5,
-  .boton6 {
-    margin-top: 15%;
+  .opc{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    background-color: #dc3545; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-}
+  }
+  .bt1{
+    margin-left: 50%;
+  }
 .boton1{
   width: 200%;
 }
